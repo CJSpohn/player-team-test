@@ -1,0 +1,15 @@
+{
+  "name": "rental-car",
+  "version": "1.0.0",
+  "description": "Rental Car",
+  "main": "agency-test.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Eric Weissman",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}
