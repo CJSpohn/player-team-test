@@ -1,4 +1,4 @@
-## Rent-A-Car
+## Meals and Orders
 
 This is one of the challenges that can be used for the Week 4 Mock Assessments.
 
@@ -8,11 +8,11 @@ Students should either be asked to complete on an instructors machine or navigat
 
 ```
 1. Clone down repo.
-2. `cd` into `rent-a-car`
+2. `cd` into `week-4-b`
 3. Run `npm install`
-4. Run `npm test customer-test.js`
+4. Run `npm test meal-test.js`
 ```
 
 ## Work Time
 
-First, pass all tests for the Customer. Then, pass the tests for the Agency.
+First, pass all tests for the Meal. Then, pass the tests for the Order.
