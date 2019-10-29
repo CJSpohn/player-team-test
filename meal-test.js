@@ -21,7 +21,7 @@ describe('Meal', function() {
   it.skip('should default to not complete', function() {
     var appetizer = new Meal('Jicama & Cucumber', [], 14);
     
-    assert.equal(customer44.complete, false);
+    assert.equal(appetizer.complete, false);
   });
 
   it.skip('should have a table number', function() {
