@@ -7,7 +7,7 @@ describe('Meal', function() {
     var shrimpTacos = new Meal('Shrimp Tacos', ["no cheese"], 14);
     
     assert.equal(shrimpTacos.name, 'Shrimp Tacos');
-    assert.equal(shrimpTacos.specialRequests, ["no cheese"]);
+    assert.deepEqual(shrimpTacos.specialRequests, ["no cheese"]);
     assert.equal(shrimpTacos.tableNumber, 14);
   });
 
@@ -15,7 +15,7 @@ describe('Meal', function() {
     var appetizer = new Meal('Jicama & Cucumber', [], 14);
     
     assert.equal(appetizer.name, 'Jicama & Cucumber');
-    assert.equal(appetizer.specialRequests, []);
+    assert.deepEqual(appetizer.specialRequests, []);
   });
 
   it.skip('should default to not complete', function() {
