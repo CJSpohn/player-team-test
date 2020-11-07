@@ -20,8 +20,9 @@ describe('Player', function() {
   });
 
   it.skip('should default to not playing', function() {
-    var player = new Player('Mark', 44, []);
+    var player = new Player('Mark', 44);
 
+    assert.deepEqual(player.injuries, [])
     assert.equal(player.playing, false);
   });
 
