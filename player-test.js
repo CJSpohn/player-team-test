@@ -8,10 +8,10 @@ describe('Player', function() {
 
     assert.equal(player.name, 'Jeff');
     assert.equal(player.number, 27);
-    assert.deepEqual(shrimpTacos.injuries ['bruised rib']);
+    assert.deepEqual(player.injuries ['bruised rib']);
   });
 
-  it.skip('should be able to have a diff. name, jersey number, and injuries', function() {
+  it('should be able to have a diff. name, jersey number, and injuries', function() {
     var player = new Player('Mary', 22, ['sprained ankle']);
 
     assert.equal(player.name, 'Mary');
@@ -19,14 +19,19 @@ describe('Player', function() {
     assert.deepEqual(player.injuries, ['sprained ankle']);
   });
 
-  it.skip('should default to not playing', function() {
+  it('should reflect it has no injuries if none are provided', function() {
     var player = new Player('Mark', 44);
 
     assert.deepEqual(player.injuries, [])
+  });
+
+  it('should default to not playing', function() {
+    var player = new Player('Mark', 44);
+
     assert.equal(player.playing, false);
   });
 
-  it.skip('should be able to be playing', function() {
+  it('should be able to be playing', function() {
     var player = new Player('Mark', 44, []);
     var playingPlayer = player.putMeInCoach();
 
@@ -34,7 +39,7 @@ describe('Player', function() {
     assert.equal(playingPlayer, `I'm ready for action!`);
   });
 
-  it.skip('should not be able to be playing if it has an injury', function() {
+  it('should not be able to be playing if it has an injury', function() {
     var player = new Player('Randall', 23, ['stubbed toe']);
     var playingPlayer = player.putMeInCoach();
 
