@@ -47,4 +47,12 @@ describe('Player', function() {
     assert.equal(playingPlayer, `I can't go in, I'm all borked up.`)
   })
 
+  it('should be able to visit the doctor and fix an injury', function() {
+    var player = new Player('Randall', 23, ['stubbed toe', 'cracked rib']);
+    player.visitDoctor();
+
+    assert.deepEqual(player.injuries, ['stubbed toe'])
+
+  })
+
 });

@@ -2,14 +2,14 @@ var assert = require('chai').assert;
 var Team = require('./team');
 var Player = require('./player');
 
-describe('Order', function() {
+describe('Team', function() {
 
-  it('should have name and associated meals', function() {
-    var meal1 = new Meal('Shrimp Tacos', ['no cheese'], 14);
-    var meal2 = new Meal('Jicama & Cucumber', [], 14);
-    var meal3 = new Meal('The Situation Gordita', ['cilantro', 'onion'], 14);
-    var meals = [meal1, meal2, meal3];
-    var order = new Order({ name: 'Table 14', meals: meals });
+  it('should have name and associated players', function() {
+    var player1 = new Player('Becky', 14);
+    var player2 = new Player('Marcus', 28, ['shin splints']);
+    var player3 = new Player('Kelly', 44, ['torn ACL']);
+    var players = [player1, player2, player3];
+    var order = new Team({ name: 'Table 14', meals: meals });
 
     assert.equal(order.name, 'Table 14');
     assert.equal(order.meals, meals);
