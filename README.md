@@ -1,18 +1,17 @@
-## Meals and Orders
+## Player and Team
 
-This is one of the challenges that can be used for the Week 4 Mock Assessments.
-
-Students should either be asked to complete on an instructors machine or navigate while the instructor drives.
+I made this as a practice for myself and a resource for fellow Turing students.
+Solutions are included in the file to reference but I would try to work through it on your own first! It's modeled after our mock assessment but I would say is longer than those files. So don't feel like it HAS to be done in 20 minutes.
 
 ## Steps for Installation
 
 ```
 1. Clone down repo.
-2. `cd` into `week-4-b`
+2. `cd` into `player-team-test`
 3. Run `npm install`
-4. Run `npm test meal-test.js`
+4. Run `npm test player-test.js`
 ```
 
 ## Work Time
 
-First, pass all tests for the Meal. Then, pass the tests for the Order.
+First, pass all tests for the Player, and then all of the tests for Team.
